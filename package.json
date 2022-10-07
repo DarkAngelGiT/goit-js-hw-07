@@ -1,8 +1,8 @@
 {
-  "name": "parcel",
+  "name": "goit-js-hw-07",
   "version": "1.0.0",
   "description": "",
-  "source": "src/index.html",
+  "source": "index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
