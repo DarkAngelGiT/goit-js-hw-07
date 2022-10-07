@@ -1,34 +1,20 @@
 {
-  "name": "parcel-project-template",
-  "version": "2.0.0",
+  "name": "parcel",
+  "version": "1.0.0",
   "description": "",
-  "homepage": "https://yours-mate.github.io/team-project",
+  "source": "src/index.html",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+  "devDependencies": {
+    "parcel": "^2.7.0"
   },
   "dependencies": {
     "basiclightbox": "^5.0.4",
-    "iquery": "^0.0.2",
-    "jquery": "^3.6.0",
-    "modern-normalize": "^1.1.0",
-    "slick-carousel": "^1.8.1"
-  },
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.6.0",
-    "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
-  },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+    "lodash": "^4.17.21"
+  }
 }
