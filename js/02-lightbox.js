@@ -5,7 +5,26 @@ import { galleryItems } from './gallery-items.js';
 /*                                     new                                    */
 /* -------------------------------------------------------------------------- */
 
+const galleryRef = document.querySelector('.gallery')
+const galleryCreate = makeGallery(galleryItems);
+galleryRef.insertAdjacentHTML('beforeend', galleryCreate);
 
+// створюємо елементи HTML 
+function makeGallery(items) {
+  return items
+  .map(({ preview, original, description }) => {
+    return `<a class="gallery__item" href="${original}">
+    <img class="gallery__image" src="${preview}" alt="${description}">
+      </a>`;
+  })
+  .join("");
+}
+
+const lightbox = new SimpleLightbox(".gallery a", {
+  captionPosition: 'bottom',
+  captionsData: 'alt',
+  captionDelay: 250,
+});
 
 /* -------------------------------------------------------------------------- */
 /*                                     Old                                    */
@@ -29,4 +48,4 @@ import { galleryItems } from './gallery-items.js';
 //   captionDelay: 250,
 // });
 
-//   // console.log(galleryRef)
+console.log(lightbox);
